@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.lsita-suspensa{
+    margin: 28px 0;
+}
+
+.lsita-suspensa label{
+    color: #212121;
+
+    display: block;
+    margin-bottom: 8px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.lsita-suspensa select{
+    border: none;
+
+    color: #212121;
+    background-color: #FFFFFF;
+    box-shadow: 0px 12px 26px rgba(0, 0, 0, 0.06);
+
+    width: 100%;
+    padding: 24px;
+    box-sizing: border-box;
+
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
