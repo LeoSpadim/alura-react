@@ -13,9 +13,18 @@ const Time = (props) => {
         <section className="time" style={corDeFundo}>
             <h3>{props.name}</h3>
             <hr style={corDestque}/>
-            {props.colaboradores.map(colaborador => 
-                <Card imagem={colaborador.imagem} nome={colaborador.nome} cargo={colaborador.cargo}/>
-            )}
+            <div className='colaboradores'>
+                {props.employee.map(colaborador => 
+                    <Card 
+                        key={colaborador.nome}
+                        
+                        imagem={colaborador.imagem} 
+                        nome={colaborador.nome} 
+                        cargo={colaborador.cargo}
+                    />
+                )}
+            </div>
+            
         </section>
     );
 }

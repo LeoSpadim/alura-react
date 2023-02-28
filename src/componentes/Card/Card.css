@@ -8,13 +8,16 @@
 .colaborador .cabecalho {
     background-color:  #F0F0F0;
     border-radius: 10px 10px 0px 0px;
+
+    max-height: 90px;
 }
+
 .colaborador img {
     width: 120px;
     border-radius: 50%;
 
     position: relative;
-    bottom: -50px;
+    bottom: -40px;
 }
 
 .colaborador .rodape {
@@ -22,7 +25,7 @@
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
     border-radius: 0px 0px 10px 10px;
 
-    padding: 68px 32px 28px 32px;
+    padding: 88px 32px 28px 32px;
     overflow-wrap: break-word;
 }
 .colaborador .rodape h4 {

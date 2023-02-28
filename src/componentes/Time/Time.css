@@ -21,3 +21,10 @@
     height: 4px;
     width: 32px;
 }
+
+.time .colaboradores{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 32px;
+}

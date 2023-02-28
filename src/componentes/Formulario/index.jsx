@@ -7,7 +7,7 @@ import './Formulario.css'
 const Formulario = (props) =>{
     const [nome, setNome] = useState('');
     const [cargo, setCargo] = useState('');
-    const [imagem, setImagem] = useState('https://imgur.com/a/UUW1wZg');
+    const [imagem, setImagem] = useState('https://via.placeholder.com/120');
     const [time, setTime] = useState('');
 
     const aoSalvar = (evento) =>{
@@ -33,8 +33,8 @@ const Formulario = (props) =>{
                     aoAlterar={valor => setNome(valor)}
                 />
                 <CampoTexto 
-                    label="Cargo"
-                    placeholder="Digite seu cargo"
+                    label="Função"
+                    placeholder="Digite sua função"
                     obrigatorio={true}
 
                     value={cargo}
@@ -63,26 +63,4 @@ const Formulario = (props) =>{
 
 export default Formulario;
 
-/*
-    const [nome, setNome] = useState('');
-    const [cargo, setCargo] = useState('');
-    const [imagem, setImagem] = useState('https://imgur.com/a/UUW1wZg');
-    const [time, setTime] = useState('');
 
-    Hook useState para declarar quatro estados do 
-    componente: nome, cargo, imagem e time.
-
-    A sintaxe de useState é 
-    (estadoInicial) => [estado, atualizador], 
-    onde estadoInicial é o valor inicial do estado 
-    e atualizador é a função que atualiza o valor 
-    do estado.
-    
-    value={...}
-    aoAlterar={valor => set...(valor)}
-
-    As funções aoAlterar passadas para os componentes 
-    filho CampoTexto e CampoLista usam essas funções 
-    atualizadoras para atualizar os estados quando o 
-    valor do campo de texto ou lista é alterado.
-*/
