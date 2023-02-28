@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/alura-react/static/css/main.09b254a4.css",
+    "main.js": "/alura-react/static/js/main.2d6a9ba7.js",
+    "static/js/787.89a9fae0.chunk.js": "/alura-react/static/js/787.89a9fae0.chunk.js",
+    "index.html": "/alura-react/index.html",
+    "main.09b254a4.css.map": "/alura-react/static/css/main.09b254a4.css.map",
+    "main.2d6a9ba7.js.map": "/alura-react/static/js/main.2d6a9ba7.js.map",
+    "787.89a9fae0.chunk.js.map": "/alura-react/static/js/787.89a9fae0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.09b254a4.css",
+    "static/js/main.2d6a9ba7.js"
+  ]
+}
