@@ -7,17 +7,24 @@ import './Formulario.css'
 const Formulario = (props) =>{
     const [nome, setNome] = useState('');
     const [cargo, setCargo] = useState('');
-    const [imagem, setImagem] = useState('https://via.placeholder.com/120');
+    const [imagem, setImagem] = useState('');
     const [time, setTime] = useState('');
 
     const aoSalvar = (evento) =>{
         evento.preventDefault();
+        if(imagem === '') {
+            setImagem('https://via.placeholder.com/150x150.png?text=Imagem+padr%C3%A3o')
+        }
         props.aoCadastrar({
             nome,
             cargo,
             imagem,
             time
         });
+        setNome('');
+        setCargo('');
+        setImagem('');
+        setTime('');
     }
 
     return(
@@ -62,5 +69,3 @@ const Formulario = (props) =>{
 }
 
 export default Formulario;
-
-
