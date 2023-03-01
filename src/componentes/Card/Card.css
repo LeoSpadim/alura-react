@@ -54,4 +54,6 @@
     position: absolute;
     right: -14px;
     top: -16px;
+
+    cursor: pointer;
 }
