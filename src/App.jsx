@@ -34,6 +34,10 @@ function App() {
 
     const [colaboradores, setColaboradores] = useState([]);
 
+    function deletarColaborador(){
+        console.log('Colaborador deletado');
+    }
+
     return (
         <div className="App">
             <Banner/>
@@ -44,12 +48,12 @@ function App() {
             {times.map(time => 
                 <Time 
                     key={time.nome} 
-
                     name={time.nome}
                     colorBg={time.corFundos} 
                     colorHl={time.corDestaques}
 
                     employee={colaboradores.filter(colaborador => colaborador.time === time.nome)}
+                    aoDeletar={deletarColaborador}
                 />
             )}
         </div>

@@ -7,18 +7,18 @@ const Time = (props) => {
             <section className="time" style={{backgroundColor: props.colorBg}}>
                 <h3>{props.name}</h3>
                 <hr style={{backgroundColor: props.colorHl}}/>
-                <div className='colaboradores'>
-                    {props.employee.map(colaborador => 
-                        <Card 
-                            key={colaborador.nome}
-                            color={props.colorHl}
-                            
-                            imagem={colaborador.imagem} 
-                            nome={colaborador.nome} 
-                            cargo={colaborador.cargo}
-                        />
-                    )}
-                </div>
+                <div className='colaboradores'>{
+                    props.employee.map(colaborador => <Card 
+                        key={colaborador.nome}
+                        color={props.colorHl}
+                        
+                        imagem={colaborador.imagem} 
+                        nome={colaborador.nome} 
+                        cargo={colaborador.cargo}
+
+                        aoDeletar={props.aoDeletar}
+                    />
+                )}</div>
             </section>
         : ''
     );

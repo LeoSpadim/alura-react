@@ -12,9 +12,6 @@ const Formulario = (props) =>{
 
     const aoSalvar = (evento) =>{
         evento.preventDefault();
-        if(imagem === '') {
-            setImagem('https://via.placeholder.com/150x150.png?text=Imagem+padr%C3%A3o')
-        }
         props.aoCadastrar({
             nome,
             cargo,

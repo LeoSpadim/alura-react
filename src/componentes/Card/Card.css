@@ -3,6 +3,7 @@
 .colaborador {
     width: 280px;
     font-family: 'Montserrat', sans-serif;
+    position: relative;
 }
 
 .colaborador .cabecalho {
@@ -17,8 +18,9 @@
     width: 120px;
     border-radius: 50%;
 
-    position: relative;
-    bottom: -40px;
+    position: absolute;
+    left: 82px;
+    top: 38px;
 }
 
 .colaborador .rodape {
@@ -46,4 +48,10 @@
     line-height: 20px;
 
     margin: 0;
+}
+
+.colaborador .deletar{
+    position: absolute;
+    right: -14px;
+    top: -16px;
 }

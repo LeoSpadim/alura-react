@@ -1,9 +1,20 @@
 import './Card.css'
+import {AiFillMinusCircle} from 'react-icons/ai'
+import React, { useState } from 'react';
 
 const Card = (props) => {
+    const [showDeleteIcon, setShowDeleteIcon] = useState(false);
+    const handleMouseEnter = () => {
+      setShowDeleteIcon(true);
+    }
+    const handleMouseLeave = () => {
+      setShowDeleteIcon(false);
+    }
+
     return(
-        <div className='colaborador'>
+        <div className='colaborador' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <div className='cabecalho' style={{backgroundColor: props.color}}>
+                {showDeleteIcon && (<AiFillMinusCircle size={32} className='deletar' onClick={props.aoDeletar} />)}
                 <img src={props.imagem} alt="" />
             </div>
             <div className='rodape'>
