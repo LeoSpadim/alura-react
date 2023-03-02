@@ -14,7 +14,13 @@ const Card = (props) => {
     return(
         <div className='colaborador' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <div className='cabecalho' style={{backgroundColor: props.color}}>
-                {showDeleteIcon && (<AiFillMinusCircle size={32} className='deletar' onClick={props.aoDeletar} />)}
+                {showDeleteIcon && (
+                    <AiFillMinusCircle 
+                        size={32} 
+                        className='deletar' 
+                        onClick={() => props.aoDeletar(props.nome)}
+                    />
+                )}
                 <img src={props.imagem} alt="" />
             </div>
             <div className='rodape'>

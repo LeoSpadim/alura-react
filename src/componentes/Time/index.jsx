@@ -4,7 +4,7 @@ import './Time.css';
 const Time = (props) => {
     return(
         props.employee.length > 0 ? 
-            <section className="time" style={{backgroundColor: props.colorBg}}>
+            <section className='time' style={{backgroundColor: props.colorBg}}>
                 <h3>{props.name}</h3>
                 <hr style={{backgroundColor: props.colorHl}}/>
                 <div className='colaboradores'>{

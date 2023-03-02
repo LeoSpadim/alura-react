@@ -34,8 +34,8 @@ function App() {
 
     const [colaboradores, setColaboradores] = useState([]);
 
-    function deletarColaborador(){
-        console.log('Colaborador deletado');
+    function deletarColaborador(props){
+        setColaboradores(colaboradores.filter(colaborador => colaborador.nome !== props));
     }
 
     return (
